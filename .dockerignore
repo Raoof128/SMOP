@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.tmp
+.venv/
+venv/
+.DS_Store
+.git/
+.gitignore
+logs/
+models/*.joblib
+sbom/*.json
