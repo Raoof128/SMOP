@@ -63,7 +63,7 @@ ruff check .
 black --check .
 pytest
 ```
-CI runs the same steps via GitHub Actions ([.github/workflows/ci.yml](.github/workflows/ci.yml)).
+CI runs the same steps via GitHub Actions ([.github/workflows/ci.yml](.github/workflows/ci.yml)), and the simulated pipeline at [pipelines/ci_cd_simulated.yml](pipelines/ci_cd_simulated.yml) mirrors those lint/test/service checks for offline validation.
 
 ### Pre-commit
 Install git hooks to keep formatting and linting consistent:
