@@ -1,0 +1,10 @@
+name: Simulated CI/CD
+steps:
+  - name: Lint
+    run: |
+      ruff check .
+      black --check .
+  - name: Test
+    run: pytest
+  - name: Service smoke test
+    run: python -m backend.main
