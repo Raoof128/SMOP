@@ -40,9 +40,7 @@ class ModelRegistry:
         """Create an empty registry file when missing."""
 
         if not REGISTRY_FILE.exists():
-            REGISTRY_FILE.write_text(
-                json.dumps({"models": [], "deployed_run_id": None}, indent=2)
-            )
+            REGISTRY_FILE.write_text(json.dumps({"models": [], "deployed_run_id": None}, indent=2))
 
     def _load_registry(self) -> Dict:
         """Load registry content from disk."""
